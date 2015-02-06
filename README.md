@@ -10,7 +10,7 @@ But seriously. Don't rely on this yet since it will change quite a bit.
 ### Usage
 
 Importing / starting Ghostats:
-<pre>
+```go
 package main
 
 import "github.com/jamiealquiza/ghostats"
@@ -18,7 +18,7 @@ import "github.com/jamiealquiza/ghostats"
 func main() {
 	ghostats.Start("localhost", "8080", nil)
 }
-</pre>
+```
 
 Query Ghostats:
 <pre>
