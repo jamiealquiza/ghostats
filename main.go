@@ -65,7 +65,9 @@ func buildStats(serviceInfo map[string]interface{}) []byte {
 
 	// Add supplied service info.
 	stats["service"] = make(map[string]interface{})
-	stats["service"] = serviceInfo
+	if serviceInfo != nil {
+		stats["service"] = serviceInfo
+	}
 	// Append default service info.
 	stats["service"]["start-time"] = startTime.Format(time.RFC3339)
 	uptime := int64(time.Since(startTime).Seconds())
