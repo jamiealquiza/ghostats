@@ -3,7 +3,7 @@ Go runtime and other stats over TCP
 
 ### Overview
 
-Ghostats is a simple package that exposes runtime memory stats in additional to general service stats. There will be much more, including Graphite output.
+Runstats is a simple package that exposes runtime memory stats in additional to general service stats. There will be much more, including Graphite output.
 
 But seriously. Don't rely on this yet since it will change quite a bit.
 
