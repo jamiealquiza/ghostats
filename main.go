@@ -1,5 +1,4 @@
-// 2015 Jamie Alquiza
-package ghostats
+package runstats
 
 import (
 	"runtime"

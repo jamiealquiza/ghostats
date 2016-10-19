@@ -1,26 +1,24 @@
-# ghostats
+# runstats
 Go runtime and other stats over TCP
 
 ### Overview
 
-Runstats is a simple package that exposes runtime memory stats in additional to general service stats. There will be much more, including Graphite output.
-
-But seriously. Don't rely on this yet since it will change quite a bit.
+Runstats exposes runtime memory stats in addition to general service stats.
 
 ### Usage
 
-Importing / starting Ghostats:
+Importing / starting Runstats:
 ```go
 package main
 
-import "github.com/jamiealquiza/ghostats"
+import "github.com/jamiealquiza/runstats"
 
 func main() {
-	ghostats.Start("localhost", "8080", nil)
+	runstats.Start("localhost", "8080", nil)
 }
 ```
 
-Query Ghostats:
+Query Runstats:
 <pre>
 % echo stats | nc localhost 8080
 {
